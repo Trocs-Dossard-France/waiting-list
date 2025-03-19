@@ -57,7 +57,7 @@ function TimeUnit({ value, label }: { value: number; label: string }) {
       transition={{ duration: 0.5 }}
     >
       <div className="relative w-16 h-16 md:w-20 md:h-20 flex items-center justify-center mb-2">
-        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm rounded-lg border border-border shadow-lg" />
+        <div className="absolute inset-0 bg-background/80 backdrop-blur-xs rounded-lg border border-border shadow-lg" />
         <motion.span
           key={value}
           className="relative text-2xl md:text-3xl font-bold"
