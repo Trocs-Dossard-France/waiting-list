@@ -3,10 +3,18 @@
 import {CountdownTimer} from "@/components/countdown-timer";
 import {ArrowDown} from "lucide-react";
 import Image from "next/image";
+import {env} from "@/env";
 
 export async function HeroSection() {
     // Set launch date to March 30, 2025
-    const launchDate = new Date('2025-03-30');
+    const launchDate = new Date(env.NEXT_PUBLIC_RELEASE_DATE);
+
+    const weekday = launchDate.toLocaleString('fr-FR', { weekday: 'long' });
+    const year = launchDate.getFullYear();
+    const month = launchDate.toLocaleString('fr-FR', { month: 'long' });
+    const day = launchDate.getDate();
+
+    const launchDateStr = `${weekday} ${day} ${month} ${year}`
 
     return (
         <section className="pt-32 md:pt-48 pb-20 px-4 md:px-8 lg:px-12" id="hero">
@@ -30,7 +38,7 @@ export async function HeroSection() {
                         </a>
                         <div className="flex items-center space-x-2">
                             <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
-                            <p className="text-gray-600">Lancement le <span className="font-medium">30 mars 2025</span>
+                            <p className="text-gray-600">Lancement le <span className="font-medium">{launchDateStr}</span>
                             </p>
                         </div>
                     </div>

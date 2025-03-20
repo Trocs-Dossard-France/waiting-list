@@ -2,17 +2,16 @@
 
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
+import * as React from "react";
 
 export async function Navbar() {
   return (
       <header className="py-6 px-4 md:px-8 lg:px-12 fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center">
-            <svg className="h-8 w-8 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-            </svg>
-            <span className="ml-2 font-bold text-xl">DossardSwap</span>
+            <Image src={"/images/logo.png"} alt="logo of bibxchange" width={64} height={64} />
+            <span className="ml-2 font-bold text-xl">Bib Xchange</span>
           </div>
           <nav className="hidden md:flex space-x-8">
             <NavLink href="#how-it-works" className="text-gray-600 hover:text-blue-600 transition-colors">Comment ça marche</NavLink>
