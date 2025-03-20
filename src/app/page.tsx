@@ -1,11 +1,16 @@
 import { Navbar } from "@/components/navbar";
 import { HeroSection } from "@/components/hero-section";
+import { ProcessSteps } from "@/components/process-steps";
+import { ComparisonSection } from "@/components/comparison-section";
+import { SignupSection } from "@/components/signup-section";
 
 export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col">
-      <Navbar />
+    <>
       <HeroSection />
-    </main>
+      <ProcessSteps />
+      <ComparisonSection />
+      <SignupSection />
+    </>
   );
 }

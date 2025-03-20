@@ -9,7 +9,7 @@ export function GradientHeading({ children, className }: GradientHeadingProps) {
   return (
     <h1
       className={cn(
-        "text-6xl sm:text-7xl font-bold tracking-tight text-gradient-heading",
+        "text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground",
         className
       )}
     >

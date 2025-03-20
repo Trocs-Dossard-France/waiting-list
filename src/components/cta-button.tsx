@@ -11,7 +11,7 @@ export function CTAButton({ children, className, onClick }: CTAButtonProps) {
   return (
     <Button
       className={cn(
-        "bg-white/90 hover:bg-white text-black font-semibold py-6 px-8 text-lg rounded-md transition-all shadow-md",
+        "bg-blue-500 hover:bg-blue-600 text-white font-semibold py-6 px-8 text-lg rounded-xl transition-all shadow-md",
         className
       )}
       onClick={onClick}
