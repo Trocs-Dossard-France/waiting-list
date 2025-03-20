@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 
-const Footer = (props: Props) => {
+const Footer = () => {
     return (
         <footer className="bg-gray-900 text-white py-12 px-4 md:px-8 lg:px-12">
             <div className="container mx-auto">
@@ -21,7 +21,7 @@ const Footer = (props: Props) => {
                             </svg>
                             <span className="ml-2 font-bold text-xl">DossardSwap</span>
                         </div>
-                        <p className="text-gray-400">La première marketplace sécurisée pour l'achat et la vente de dossards sportifs.</p>
+                        <p className="text-gray-400">{"La première marketplace sécurisée pour l'achat et la vente de dossards sportifs."}</p>
                     </div>
                     <div>
                         <h3 className="font-semibold text-lg mb-4">Liens rapides</h3>
@@ -41,7 +41,7 @@ const Footer = (props: Props) => {
                             <li><a
                                 href="#waitlist"
                                 className="text-gray-400 hover:text-blue-400 transition-colors"
-                            >Liste d'attente</a></li>
+                            >{"Liste d'attente"}</a></li>
                         </ul>
                     </div>
                     <div>

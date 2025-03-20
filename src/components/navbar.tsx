@@ -16,7 +16,7 @@ export async function Navbar() {
           </div>
           <nav className="hidden md:flex space-x-8">
             <NavLink href="#how-it-works" className="text-gray-600 hover:text-blue-600 transition-colors">Comment ça marche</NavLink>
-            <NavLink href="#why-us" clasNames="text-gray-600 hover:text-blue-600 transition-colors">Pourquoi nous</NavLink>
+            <NavLink href="#why-us" className="text-gray-600 hover:text-blue-600 transition-colors">Pourquoi nous</NavLink>
             <NavLink href="#testimonials" className="text-gray-600 hover:text-blue-600 transition-colors">Témoignages</NavLink>
           </nav>
           <a href="#waitlist" className="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition-all transform hover:scale-105 shadow-sm hover:shadow-md">Rejoindre</a>

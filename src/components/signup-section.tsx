@@ -1,10 +1,9 @@
 'use client'
 
 import { useForm } from 'react-hook-form'
-import { useState } from 'react'
 import submitForm from "@/server/form"
-import {z} from "zod";
-import {formSchema} from "@/lib/shared-form-data";
+import {type z} from "zod";
+import {type formSchema} from "@/lib/shared-form-data";
 
 type FormData = {
   name: string
@@ -40,7 +39,7 @@ export function SignupSection() {
         <section className="py-20 px-4 md:px-8 lg:px-12" id="waitlist">
             <div className="container mx-auto">
                 <div className="bg-gray-900 rounded-2xl p-8 md:p-12 text-white text-center">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-6">Rejoignez la liste d'attente</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-6">{"Rejoignez la liste d'attente"}</h2>
                     <p className="text-blue-100 mb-12 max-w-2xl mx-auto">Soyez les premiers à profiter de notre plateforme dès son lancement. Recevez un accès anticipé et des avantages exclusifs.</p>
 
                     <div className="max-w-2xl mx-auto p-4">
@@ -118,7 +117,7 @@ export function SignupSection() {
                                             Inscription en cours...
                                         </span>
                                     ) : (
-                                        <span>S'inscrire à la liste d'attente</span>
+                                        <span>{"S'inscrire à la liste d'attente"}</span>
                                     )}
                                 </button>
                             </form>
